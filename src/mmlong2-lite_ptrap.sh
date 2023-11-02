@@ -20,7 +20,7 @@ MEM_MB=600000
 MEDAKA_MODEL="r1041_e82_400bps_sup_v4.2.0" # dna_r10.4.1_e8.2_400bps_sup@v4.2.0 Just guessing on the model, the paper doesn't say whether it is fast/hac/sup or guppy version
 # srun -A chsi -p chsi  singularity exec oras://gitlab-registry.oit.duke.edu/granek-lab/granek-container-images/mmlong2/mmlong-polishing-simage:latest  medaka tools list_models
 WORKDIR="/work/qd33/nanopore/QD_ptrap_20230908/mmlong_output"
-DB_DIR="/work/jqd33/nanopore/QD_ptrap_20230908/mmlong_db"
+DB_DIR="/work/qd33/nanopore/QD_ptrap_20230908/mmlong_db"
 
 # https://pubmed.ncbi.nlm.nih.gov/35789207/
 # The generated raw Nanopore data were basecalled in super-accurate mode using Guppy v. 5.0.16 with the dna_r9.4.1_450bps_sup.cfg model for R9.4.1 and the dna_r10.4_e8.1_sup.cfg model for R10.4 chemistry. 
