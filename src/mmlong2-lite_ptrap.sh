@@ -13,11 +13,11 @@ set -eo pipefail
 set -u
 
 #-----------------------------------------------------------
-FASTQ_FILE="/work/josh/mmlong_data/wwtp_gridion_104/ERR7256374.fastq.gz"
-SAMPLE="wwtp_104" # Look into "workdir" snakemake config <https://stackoverflow.com/a/40997767>
+FASTQ_FILE="/work/qd33/nanopore/QD_ptrap_20230908/results_0/demux/barcode02/fastq_runid_unknown_0.fastq.gz"
+SAMPLE="QD_ptrap_20230908" # Look into "workdir" snakemake config <https://stackoverflow.com/a/40997767>
 NUM_THREADS=80
 MEM_MB=600000
-MEDAKA_MODEL="r104_e81_sup_g5015" # Just guessing on the model, the paper doesn't say whether it is fast/hac/sup or guppy version
+MEDAKA_MODEL="r1041_e82_400bps_sup_v4.2.0" # dna_r10.4.1_e8.2_400bps_sup@v4.2.0 Just guessing on the model, the paper doesn't say whether it is fast/hac/sup or guppy version
 # srun -A chsi -p chsi  singularity exec oras://gitlab-registry.oit.duke.edu/granek-lab/granek-container-images/mmlong2/mmlong-polishing-simage:latest  medaka tools list_models
 WORKDIR="/work/josh/mmlong_output"
 DB_DIR="/work/josh/mmlong_db"
