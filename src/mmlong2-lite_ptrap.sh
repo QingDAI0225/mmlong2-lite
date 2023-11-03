@@ -13,7 +13,7 @@ set -eo pipefail
 set -u
 
 #-----------------------------------------------------------
-FASTQ_FILE="/work/qd33/nanopore/QD_ptrap_20230908/results_0/demux/barcode02/fastq_runid_unknown_0.fastq.gz"
+FASTQ_FILE="/work/qd33/nanopore/QD_ptrap_20230908/results_0/demux/barcode02.fastq.gz"
 SAMPLE="QD_ptrap_20230908" # Look into "workdir" snakemake config <https://stackoverflow.com/a/40997767>
 NUM_THREADS=80
 MEM_MB=600000
