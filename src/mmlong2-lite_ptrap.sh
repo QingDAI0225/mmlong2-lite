@@ -75,6 +75,7 @@ snakemake \
     --latency-wait 30 \
     --cores ${SLURM_CPUS_PER_TASK} \
     --nolock \
+    --latency-wait 3600 \
     --use-singularity \
     --singularity-args "--bind ${FASTQ_DIR},${DB_DIR}" \
     -s ${SCRIPT_DIR}/mmlong2-lite.smk \
