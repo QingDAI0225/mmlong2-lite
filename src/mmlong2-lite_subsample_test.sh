@@ -13,13 +13,13 @@ set -eo pipefail
 set -u
 
 #-----------------------------------------------------------
-FASTQ_FILE="/work/qd33/nanopore/QD_ptrap_20230908/results_0/demux/barcode02_subsample/sub_50_123.fastq.gz"
-SAMPLE="QD_ptrap_20230908_sub_50_123" # Look into "workdir" snakemake config <https://stackoverflow.com/a/40997767>
+FASTQ_FILE="/work/qd33/nanopore/QD_ptrap_20230908/results_0/demux/barcode02_seqkit_subsample/barcode02_s123_n1000000.fastq.gz"
+SAMPLE="barcode02_s123_n1000000" # Look into "workdir" snakemake config <https://stackoverflow.com/a/40997767>
 NUM_THREADS=80
 MEM_MB=600000
 MEDAKA_MODEL="r1041_e82_400bps_sup_v4.2.0" # dna_r10.4.1_e8.2_400bps_sup@v4.2.0 Just guessing on the model, the paper doesn't say whether it is fast/hac/sup or guppy version
 # srun -A chsi -p chsi  singularity exec oras://gitlab-registry.oit.duke.edu/granek-lab/granek-container-images/mmlong2/mmlong-polishing-simage:latest  medaka tools list_models
-WORKDIR="/work/qd33/nanopore/QD_ptrap_20230908/mmlong_subsampling_output"
+WORKDIR="/work/qd33/nanopore/QD_ptrap_20230908/mmlong_output"
 DB_DIR="/work/qd33/nanopore/QD_ptrap_20230908/mmlong_db"
 
 # https://pubmed.ncbi.nlm.nih.gov/35789207/
