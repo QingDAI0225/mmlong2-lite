@@ -13,8 +13,8 @@ set -eo pipefail
 set -u
 
 #-----------------------------------------------------------
-FASTQ_FILE="/work/qd33/nanopore/QD_ptrap_20230908/results_0/demux/barcode02_seqkit_subsample/barcode02_s6_p.5.fastq.gz"
-SAMPLE="barcode02_s6_p.5" # Look into "workdir" snakemake config <https://stackoverflow.com/a/40997767>
+FASTQ_FILE="/work/qd33/nanopore/QD_ptrap_20230908/results_0/demux/barcode02_seqkit_subsample/barcode02_s6666_p.25.fastq.gz"
+SAMPLE="barcode02_s6666_p.25" # Look into "workdir" snakemake config <https://stackoverflow.com/a/40997767>
 NUM_THREADS=80
 MEM_MB=600000
 MEDAKA_MODEL="r1041_e82_400bps_sup_v4.2.0" # dna_r10.4.1_e8.2_400bps_sup@v4.2.0 Just guessing on the model, the paper doesn't say whether it is fast/hac/sup or guppy version
